@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Rashmi ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(#ffd6e7,#fff0f5);
+text-align:center;
+overflow-x:hidden;
+}
+
+h1{
+color:#d63384;
+font-size:55px;
+margin-top:30px;
+}
+
+.letter{
+background:white;
+width:85%;
+max-width:700px;
+margin:30px auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.gallery img{
+width:260px;
+border:10px solid white;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.footer{
+font-size:35px;
+color:#c2185b;
+padding:40px;
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:fall linear infinite;
+top:-50px;
+}
+
+@keyframes fall{
+0%{transform:translateY(-100px);}
+100%{transform:translateY(110vh);}
+}
+</style>
+
+</head>
+<body>
+
+<h1>🎂 Happy Birthday Rashmi ❤️</h1>
+
+<div class="letter">
+<h2>My Dearest Rashmi,</h2>
+
+<p style="font-size:22px;line-height:1.8;">
+Happy Birthday! 🎂❤️<br><br>
+
+May your day be filled with happiness,
+laughter, beautiful memories and endless smiles.
+
+I wish you good health, success and all the happiness you deserve.
+May every dream in your heart come true.
+
+Enjoy your special day and have an amazing year ahead. 🌸✨
+</p>
+</div>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+</div>
+
+<div class="footer">
+Yours Always,<br>
+Kavindu 💖
+</div>
+
+<script>
+for(let i=0;i<25;i++){
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="💖";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(5+Math.random()*6)+"s";
+document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
